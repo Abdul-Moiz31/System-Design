@@ -4,9 +4,9 @@
   "description": "A comprehensive rate limiter implementation with multiple algorithms",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "node api.js && tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node api.js && node dist/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -23,4 +23,3 @@
     "typescript": "^5.2.2"
   }
 }
-

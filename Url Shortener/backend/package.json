@@ -4,9 +4,9 @@
   "description": "Production-ready URL Shortener API",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "node api.js && tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node api.js && node dist/index.js",
     "db:migrate": "tsx src/db/migrate.ts"
   },
   "dependencies": {
@@ -29,4 +29,3 @@
     "typescript": "^5.3.3"
   }
 }
-
